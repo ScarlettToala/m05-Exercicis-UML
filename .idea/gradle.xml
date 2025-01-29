@@ -5,6 +5,11 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="/dades/scarlettToal/m03-m05/m5-a05-DisenysDiagramesClase" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

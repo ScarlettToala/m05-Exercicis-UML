@@ -1,21 +1,35 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+enum Tipus{
+FOC
+AIGUA
+PLANTA
+TERRA
+ACER
+BESTIOLA
+DRAC
+ELÈCTRIC
+FANTASMA
+FADA
+GEL
+LLUITA
+PLANTA
+PSÍQUIC
+ROCA
+SINISTRE
+VERÍ
+VOLADOR
+}
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class Cartes{
+---Atributs---
+    - Tipus: enum
+    - PuntsAtac: Int
+    - PuntDefensa: Int
+---Metodes---
+ + consultarNomCarta()
+ +
 }
 
 enum TimeUnit {
