@@ -29,13 +29,9 @@ class Cartes{
     - PuntDefensa: Int
 ---Metodes---
  + consultarNomCarta()
- +
+ + sumaPoderTotalCartes()
+ + compararCartes()
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
-
+Cartes *-- Tipus
 @enduml

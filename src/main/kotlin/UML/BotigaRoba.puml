@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class PeçaDeRoba {
+---Atributs---
+- nom: String
+- talla: Int
+- preu: Int
+- categoria: String
+---Metodes---
++ aplicarDescompte()
++ consultarCategoria()
+}
+
+class Client {
+---Atributs---
+- nom: String
+- email: String
+- cistella: MutableList<PeçaDeRoba>
+---Metodes---
++ afergirPeça()
++ calcularCistella()
+
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+@enduml

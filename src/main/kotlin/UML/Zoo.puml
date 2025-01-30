@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Animal {
+---Atributs---
+- especie: String
+- edat: Int
+- nom: String
+- habitat: String
+---Metodes---
++ moure()
++ emetreSo()
++ menjar()
+}
+
+class Visitant {
+---Atributs---
+- nom: String
+- edat: Int
+- dataVisita: MutableList<Data>
+- animalsVisitats: MutableList<Animal>
+---Metodes---
++ afegirAnimalVisitat()
+}
+
+enum Data{
+any: Int
+mes: Int
+dia: Int
+}
+
+Visitant *-- Data
+@enduml

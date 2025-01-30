@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class BegudaMoster {
+---Atributs---
+- sabor: String
+- quantitatCafeïna: Int
+- color: String
+- VolumLlaunaCC: Int
+}
+
+class Participant {
+---Atributs---
+- nom: String
+- dataNaixement: MutableList<Data>
+- CafeïnaConsumida: Int
+- LlistaBegudes: MutableList<BegudaMoster>
+---Metodes---
++ addNovaBeguda()
++ consultarCafeïnaAcumulada()
++ estatCafeïnaSaludable()
++ calcularEdat
+}
+
+enum Data{
+any: Int
+mes: Int
+dia: Int
+}
+
+Participant *-- Data
+
+@enduml
